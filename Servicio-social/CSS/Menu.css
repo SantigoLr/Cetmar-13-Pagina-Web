@@ -1,0 +1,139 @@
+/* =============== parte superior =============== */
+
+.superior{
+    padding: 5px 25px;
+    background-color: #1B4168;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.redes{
+    display: flex;
+    height: auto;
+}
+
+.redes a {
+    margin: 0 10px;
+}
+
+.superior a{
+    display: flex;
+    margin-top: 2px;
+    padding: 0%;
+    /* position: relative; */
+}
+
+.superior a img{
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.icono-redes{
+    color: #f7f7f7;
+    font-size: 28px;
+
+}
+.icono-sesion{
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+
+
+
+/* =============== parte inferior =============== */
+
+.inferior{
+    padding: 20px 0px;
+    background-color: #1284bd;
+    display: flex;
+    width: 100%; 
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    justify-content: left;
+}
+/* =============== parte Botones =============== */
+
+.botones{
+    display: flex;
+    padding-left: 0;
+}
+
+
+.botones ul a{
+    text-align: left;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration:none;
+    transition: all 0.2s;
+    padding:20px 40px;
+
+}
+
+.botones ul a:hover{
+    background-color:rgb(10, 103, 150);
+} 
+
+.botones ul a:hover{
+    color: #dfca12;
+}  
+
+/* =============== Parte pie de pagina =============== */
+
+.abajo{
+    margin-top: 500px;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.texto-superior{
+    display: flex;
+    gap: 100px;
+    padding-top: 50px;
+    padding-left: 60px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.telefono{
+    margin-left:310px ;
+}
+
+.barra-azul2{
+    display: flex;
+    gap: 345px;
+}
+.barra-azul2 p{
+        background-color: #1284bd;
+        height: 5px;
+        width: 120px;
+        margin-left: 60px;
+        margin-top: 10px;
+}
+
+.texto-inferior{
+    display: flex;
+    gap: 95px;
+    padding-top: 20px;
+    padding-left: 0px;
+    color: gray;
+}
+.abajo-azul{
+    background-color: #1284bd;
+    width: 100%;
+    height: 50px;
+} 
+

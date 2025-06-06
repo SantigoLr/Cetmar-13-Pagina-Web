@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/Menu.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CETMAR-13</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<!-- PARTE HEADER -->
+    <header>
+        <div class="superior">
+            <nav class="redes">
+                <a href="https://www.instagram.com/cetmar13topolobampo/" target="_blank"><i class="fab fa-instagram icono-redes"></i></a>
+                <a href="https://www.facebook.com/cetmar13" target="_blank"><i class="fab fa-facebook icono-redes"></i></a>
+            </nav>
+            <a href=""><img src="/Imagenes/icono.jpg"></a>
+            <nav class="Inicio-Sesion">
+                <a href="/HTML/Login.html" class="icono-sesion"><i class="fas fa-user icono-sesion" title="Inicia sesion" ></i></a>
+            </nav>
+        </div>     
+    </header>
+
+        <div class="inferior">
+            <nav class="botones">
+                <ul><a href="/HTML/index.html">Inicio</a></ul>
+                <ul><a href="/HTML/OfertaEducativa.html">Oferta Educativa</a></ul>
+                <ul><a href="/HTML/Noticias.html">Noticias</a></ul>
+                <ul><a href="/HTML/Nosotros.html">Nosotros</a></ul>
+            </nav>
+        </div>
+
+<!-- PARTE SLIDER -->       
+        <section class="container-slider">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slider-1" src="/Imagenes/slider 1.jpg" alt="">
+                    <img id="slider-2" src="/Imagenes/slider 2.jpg" alt="">
+                    <img id="slider-3" src="/Imagenes/slider 3.jpg" alt="">
+                    <img id="slider-4" src="/Imagenes/slider 4.jpg" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slider-1"></a>
+                    <a href="#slider-2"></a>
+                    <a href="#slider-3"></a>
+                    <a href="#slider-4"></a>
+                </div>
+            </div>
+        </section>
+
+
+<!-- PARTE BIENVENIDA -->
+    <div class="bienvenida">
+        <h2>BIENVENIDOS AL PORTAL DE CETMAR No13</h2>
+        <p>Sergio Manuel Sanchez</p>
+            <div class="barra-azul"><p></p></div>
+    </div>
+    <section class="introduccion">
+        <div class="borde">
+            <div class="texto">
+                <h3>¿Qué hacemos en la Preparatoria CETMAR?</h3>
+                <p>En la Preparatoria CETMAR, ofrecemos una formación integral que combina el bachillerato general con una especialización técnica en ciencias del mar, acuacultura, pesca y ecología marina, preparando a los estudiantes para el ámbito laboral o estudios superiores. Nuestro enfoque práctico y vanguardista, respaldado por actividades en entornos reales gracias a nuestra ubicación cercana a cuerpos de agua, fomenta el desarrollo de habilidades técnicas, pensamiento crítico y conciencia ambiental. Promovemos valores como la responsabilidad social, la innovación y el compromiso con el cuidado de los ecosistemas marinos, formando ciudadanos capaces de contribuir al desarrollo sostenible de México y el mundo. </p>
+            </div>
+                <div class="fotografia">
+                <img src="/Imagenes/Estudiantes.png" alt="">
+            </div>
+        </div>
+    </section>  
+
+<!-- PARTE CARRERAS -->
+    <div class="carreras">
+        <div class="contenedor-subtitulo"> 
+            <h3>Carreras Técnicas</h3>
+            <div class="barra-blanca"><p></p></div>
+        </div>
+        
+        <div class="contenedor-carreras">
+            <div class="pesca">
+                <button class="btn-pesca" onclick="abrirModal('pesca')"> 
+                    <i class="fas fa-ship"></i>
+                    <p>Navegacion y Pesca</p>  
+                </button>
+            </div>
+            <div class="mecanica">
+                <button class="btn-mecanica" onclick="abrirModal('mecanica')"> 
+                    <i class="fas fa-cog"></i>
+                    <p>Mecánica Naval</p>  
+                </button>
+            </div>
+            <div class="refrigeracion">
+                <button class="btn-refrigeracion" onclick="abrirModal('refrigeracion')"> 
+                    <i class="fas fa-snowflake"></i>
+                    <p>Refrigeración y Climatización</p>  
+                </button>
+            </div>
+            <div class="acuacultura">
+                <button class="btn-acuacultura" onclick="abrirModal('acuacultura')"> 
+                    <i class="fas fa-fish"></i>
+                    <p>Acuacultura</p>  
+                </button>
+            </div>
+            <div class="alimentos">
+                <button class="btn-alimentos" onclick="abrirModal('alimentos')"> 
+                    <i class="fas fa-utensils"></i>
+                    <p>Producción Industrial de Alimentos</p>  
+                </button>
+            </div>
+            <div class="portuaria">
+                <button class="btn-portuaria" onclick="abrirModal('portuaria')"> 
+                    <i class="fas fa-anchor"></i>
+                    <p>Operación Portuaria</p>  
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- PARTE MODALES -->
+    <div id="modal-pesca" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('pesca')">&times;</span>
+            <div class="contenedor-grid">
+                <div class="modal-imagen">
+                    <img src="/Imagenes/maviri.jpg">
+                </div>
+                <div class="modal-texto">
+                    <h4>Navegación y Pesca</h4>
+                    <p>El Técnico en Navegación y Pesca se especializa en operar embarcaciones, manejar equipos de navegación y aplicar técnicas de pesca sustentable, siguiendo estándares nacionales e internacionales. Su campo laboral incluye trabajar en embarcaciones menores y mayores (pesca costera y de altura), talleres de artes de pesca (redes, anzuelos, trampas), tiendas de productos pesqueros, embarcaciones camaroneras y como patrón de costa.</p>
+                
+                <!-- Botón/link para redireccionar -->
+                    <a href="/HTML/OfertaEducativa.html" class="btn-ver-mas">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mecanica" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('mecanica')">&times;</span>
+            <div class="contenedor-grid">
+                <div class="modal-imagen">
+                    <img src="/Imagenes/taller-de-maquinas-escuela-maritima_0.jpg">
+                </div>
+                <div class="modal-texto">
+                    <h4>Mecánica Naval</h4>
+                    <p>El Técnico en Navegación y Pesca se especializa en operar embarcaciones, manejar equipos de navegación y aplicar técnicas de pesca sustentable, siguiendo estándares nacionales e internacionales. Su campo laboral incluye trabajar en embarcaciones menores y mayores (pesca costera y de altura), talleres de artes de pesca (redes, anzuelos, trampas), tiendas de productos pesqueros, embarcaciones camaroneras y como patrón de costa.</p>
+                
+                <!-- Botón/link para redireccionar -->
+                    <a href="/HTML/OfertaEducativa.html" class="btn-ver-mas">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-refrigeracion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('refrigeracion')">&times;</span>
+            <div class="contenedor-grid">
+                <div class="modal-imagen">
+                    <img src="/Imagenes/refrigeracion.jpg">
+                </div>
+                <div class="modal-texto">
+                    <h4>Refrigeración y Climatización</h4>
+                    <p>El Técnico en Navegación y Pesca se especializa en operar embarcaciones, manejar equipos de navegación y aplicar técnicas de pesca sustentable, siguiendo estándares nacionales e internacionales. Su campo laboral incluye trabajar en embarcaciones menores y mayores (pesca costera y de altura), talleres de artes de pesca (redes, anzuelos, trampas), tiendas de productos pesqueros, embarcaciones camaroneras y como patrón de costa.</p>
+                
+                <!-- Botón/link para redireccionar -->
+                    <a href="/HTML/OfertaEducativa.html" class="btn-ver-mas">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-acuacultura" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('acuacultura')">&times;</span>
+            <div class="contenedor-grid">
+                <div class="modal-imagen">
+                    <img src="/Imagenes/acuacultura.jpg">
+                </div>
+                <div class="modal-texto">
+                    <h4>Acuacultura</h4>
+                    <p>El Técnico en Navegación y Pesca se especializa en operar embarcaciones, manejar equipos de navegación y aplicar técnicas de pesca sustentable, siguiendo estándares nacionales e internacionales. Su campo laboral incluye trabajar en embarcaciones menores y mayores (pesca costera y de altura), talleres de artes de pesca (redes, anzuelos, trampas), tiendas de productos pesqueros, embarcaciones camaroneras y como patrón de costa.</p>
+                
+                <!-- Botón/link para redireccionar -->
+                    <a href="/HTML/OfertaEducativa.html" class="btn-ver-mas">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-alimentos" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('alimentos')">&times;</span>
+            <div class="contenedor-grid">
+                <div class="modal-imagen">
+                    <img src="/Imagenes/alim2.png">
+                </div>
+                <div class="modal-texto">
+                    <h4>Producción Industrial de Alimentos</h4>
+                    <p>El Técnico en Navegación y Pesca se especializa en operar embarcaciones, manejar equipos de navegación y aplicar técnicas de pesca sustentable, siguiendo estándares nacionales e internacionales. Su campo laboral incluye trabajar en embarcaciones menores y mayores (pesca costera y de altura), talleres de artes de pesca (redes, anzuelos, trampas), tiendas de productos pesqueros, embarcaciones camaroneras y como patrón de costa.</p>
+                
+                <!-- Botón/link para redireccionar -->
+                    <a href="/HTML/OfertaEducativa.html" class="btn-ver-mas">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-portuaria" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('portuaria')">&times;</span>
+            <div class="contenedor-grid">
+                <div class="modal-imagen">
+                    <img src="/Imagenes/Estudiantes-portuaria.jpg">
+                </div>
+                <div class="modal-texto">
+                    <h4>Operación Portuaria</h4>
+                    <p>El Técnico en Navegación y Pesca se especializa en operar embarcaciones, manejar equipos de navegación y aplicar técnicas de pesca sustentable, siguiendo estándares nacionales e internacionales. Su campo laboral incluye trabajar en embarcaciones menores y mayores (pesca costera y de altura), talleres de artes de pesca (redes, anzuelos, trampas), tiendas de productos pesqueros, embarcaciones camaroneras y como patrón de costa.</p>
+                
+                <!-- Botón/link para redireccionar -->
+                    <a href="/HTML/OfertaEducativa.html" class="btn-ver-mas">Ver más detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<!--     <div class="contenedor-noticias">
+        <div class="noticia-uno"> 
+            <img src="/Imagenes/directoraaa.jpg" alt="">
+            <h5>Sobrino de la directora del cetmar se roba 120 millones de pesos</h5>
+            <p>Denuncian al sobrino de la directora de CETMAR 13 por desvío de 120 millones: empleados acusan que el ING. Santiago Lugo Reyes desvió fondos de becas y mantenimiento por 3 años mediante facturas falsas, según investigaciones de la SEP. Autoridades allanaron la escuela y la funcionaria fue suspendida, mientras padres exigen justicia por el dinero destinado a estudiantes.</p>
+        </div>
+        <div class="noticia-dos"> 
+            <img src="" alt="">
+            <p></p>
+        </div>
+        <div class="noticia-tres"> 
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </div> -->
+
+
+
+<!-- PARTE INFERIOR -->
+    <div class="abajo">
+        <div class="texto-superior">
+            <p>DIRECCÍON</p>
+            <P class="telefono">TELÉFONO</P>
+        </div>
+        <div class="barra-azul2">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="texto-inferior">
+            <p>Cam. Al Cetmar, CETMAR, 81370 Pra Topolobampo, Sin.</p>
+            <p>668 862 0747</p> 
+        </div>
+    </div>
+    <div Class="abajo-azul"></div>
+
+    <script src="/JavaScript/javascrip.js"></script>
+</body>
+</html>

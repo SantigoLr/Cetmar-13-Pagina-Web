@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styleNos.css">
+    <link rel="stylesheet" href="/CSS/Menu.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CETMAR-13 (Nosotros)</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="superior">
+            <nav class="redes">
+                <a href="https://www.instagram.com/cetmar13topolobampo/"><i class="fab fa-instagram icono-redes"></i></a>
+                <a href="https://www.facebook.com/cetmar13"><i class="fab fa-facebook icono-redes"></i></a>
+            </nav>
+            <a href=""><img src="/Imagenes/icono.jpg"></a>
+            <nav class="Inicio-Sesion">
+                <a href="/HTML/Login.html" class="icono-sesion"><i class="fas fa-user icono-sesion" title="Inicia sesion" ></i> </a>                
+            </nav>
+        </div>
+    </header>
+    <div class="inferior">
+            <nav class="botones">
+                <ul><a href="/HTML/index.html">Inicio</a></ul>
+                <ul><a href="/HTML/OfertaEducativa.html">Oferta Educativa</a></ul>
+                <ul><a href="/HTML/Noticias.html">Noticias</a></ul>
+                <ul><a href="/HTML/Nosotros.html">Nosotros</a></ul>
+            </nav>
+        </div>
+<!-- Seccion Nosotros INICIO-->
+        <div class="contenedor-subtitulo"> 
+            <h3>Nosotros</h3>
+            <div class="barra-azul"><p></p></div>
+        </div>
+
+        <section class="NOSOTROS">
+            <div class="textos">
+                <div class="lineadeco"><div class="lineadeco2">
+                <p class="texto-principal">El Centro de Estudios Tecnológicos del Mar No. 13 (CETMAR 13) de Topolobampo es una institución educativa de nivel medio superior con más de 40 años de trayectoria, dedicada a la formación de técnicos profesionales en áreas vinculadas al sector marítimo, pesquero y portuario. Ubicado en el puerto de Topolobampo, Sinaloa, el CETMAR 13 ha egresado a más de 4,000 estudiantes que hoy contribuyen activamente al desarrollo de la región y del país.<br />
+                    Nuestros programas están diseñados para brindar a los estudiantes una formación integral, combinando conocimientos teóricos con prácticas reales, y fomentando valores como la responsabilidad ambiental y el compromiso social.<br />
+                    Con una infraestructura adecuada y un equipo docente comprometido, en CETMAR 13 seguimos formando líderes técnicos capaces de enfrentar los desafíos del mundo marino y contribuir al desarrollo sostenible de nuestras comunidades.
+                </p>
+                </div></div>
+            </div>
+        </section>
+        
+        <div class="contenedor-subtitulo-direccion">
+            <h3>Dirección</h3>
+        </div>
+        <div class="texto-mapa">
+            <div class="direccion">Km 23 Autopista Los Mochis Topolobampo 81370 Topolobampo</div>
+            <div class="mapa">
+                <div id="map" style="height: 400px;"></div>
+                <script>
+                    var map = L.map('map').setView([25.604592647991403, -109.06150591346855], 16); // Topolobampo
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                    }).addTo(map);
+
+                    L.marker([25.604592647991403, -109.06150591346855]).addTo(map)
+                    .bindPopup('CETMAR 13')
+                    .openPopup();
+                </script>
+            </div>
+        </div>
+<!-- Seccion Nosotros FIN -->
+        
+        <div class="abajo">
+            <div class="texto-superior">
+                <p>DIRECCÍON</p>
+                <P class="telefono">TELÉFONO</P>
+            </div>
+            <div class="barra-azul2">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="texto-inferior">
+                <p>Cam. Al Cetmar, CETMAR, 81370 Pra Topolobampo, Sin.</p>
+                <p>668 862 0747</p>
+            </div>
+        </div>
+        <div Class="abajo-azul"></div>
+    
+        <script src="/JavaScript/javascrip.js"></script>
+</body>
+</html>

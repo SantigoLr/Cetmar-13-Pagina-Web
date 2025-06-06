@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma
+}
+/* --- */
+.contenedor-subtitulo h3{
+    color: #1284bd;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+.texto{
+    padding: 15px;
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content:center;
+}
+.barra-azul{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.barra-azul p{
+    background-color: #1284bd;
+    height: 5px;
+    width: 300px;
+}
+
+/* --- Noticias --- */
+
+
+.contenido-noticia {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.noticias{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-family: Tahoma;
+}
+
+.titulo-noticia{
+    text-align: left;
+    font-size: 25px;
+    color: #1B4168;
+}
+.contenido-noticia p{
+    flex: 1;
+    padding-top: 10px;
+    font-size: 19px;
+    font-family: Tahoma;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imagen-noticia{
+    max-width: auto;
+    max-height: 100px;
+    border-radius: 20px;
+}
+
+/* prueba */
+
+.texto-completo {
+    flex: 1;    /* Acomoda el texto automaticamente */
+    max-height: 100px; /* Altura máxima para el texto cuando está minimizado */
+    max-width: auto;    /* Hace que el ancho del texto de adapte a la imagen */ 
+    overflow: hidden;   /* Oculta el contenido que se desborda de la altura máxima */
+}
+
+
+.btn-expandir {
+    display: block; /* Hace el botón se muestre como un bloque */
+    margin-left: auto; /* Hace que el boton este a la derecha */
+    margin-top: 10px; /* Espacio adicional encima del botón */
+    cursor: pointer;  /* Cambia el cursor al pasar por encima del botón */
+    background-color: #fff; /* Color de fondo del botón */
+    color: #1B4168;      /* Color del texto del botón */
+    border: none;      /* Elimina el borde del botón */
+}
