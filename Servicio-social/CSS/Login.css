@@ -85,6 +85,7 @@ h2{
     align-items: center;
     font-size: 1em;
     pointer-events: none;
+    transition: top 0.1s;
 }
 
 .input-box input:focus ~ label,

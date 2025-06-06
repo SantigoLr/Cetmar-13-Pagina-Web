@@ -1,0 +1,29 @@
+create table Usuarios(
+	Id			int					identity(1,1) primary key,
+	Nombre		nvarchar(30)		not null,
+	Apellidos	nvarchar(30)		not null,
+	Correo		nvarchar(40)		not null unique,
+	Contraseña	nvarchar(255)		not null,
+	Celular		nvarchar(20)				,
+	Rol			nvarchar(20)		not null default 'Profesor' check (Rol in ('Profesor', 'Administrador')),
+	Estado		nvarchar(20)		not null default 'Activo' check (Estado in ('Activo', 'Inactivo'))
+);									
+				
+Create table Noticias(
+    Id			int					identity(1,1) primary key,
+    IdUsuario	int					not null,
+    Titulo		nvarchar(100)		not null,
+    Texto		nvarchar(MAX)		not null,
+    FechaPublicacion datetime		not null default getdate(),
+    Estado		nvarchar(20)		not null default 'Borrador' check (Estado in ('Borrador', 'Publicado', 'Archivado')),
+    constraint FK_Noticias_Usuarios foreign key (IdUsuario) references Usuarios(id)
+);
+
+create table ImagenesNoticias (
+    Id			int					identity(1,1) primary key,
+    IdNoticia	int					not null,
+    UrlImagen	nvarchar(300)		not null,
+    Orden		int					not null,
+    constraint FK_ImagenesNoticias_Noticias foreign key (IdNoticia) references Noticias(id) ON DELETE CASCADE,
+    constraint UQ_ImagenOrden unique (IdNoticia, orden)
+);
