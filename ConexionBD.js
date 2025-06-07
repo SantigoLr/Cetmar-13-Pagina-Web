@@ -1,16 +1,9 @@
-const express = require('express');
 const sql = require('mssql');
 
-const app = express();
-const PORT = 3000;
-
-app.use(express.json());
-
-// Configuración para SQL Server
 const dbConfig = {
   user: 'admin_user',
   password: 'admin123',
-  server: 'R5-34G\\SQLEXPRESS01', // ¡Importante las dobles barras!
+  server: 'R5-34G\\SQLEXPRESS01',
   database: 'CETMAR-13',
   options: {
     trustServerCertificate: true,
@@ -18,19 +11,18 @@ const dbConfig = {
   },
 };
 
-// Ruta de prueba
-app.get('/api/prueba', async (req, res) => {
-  try {
-    const pool = await sql.connect(dbConfig);
-    const result = await pool.request().query('SELECT GETDATE() AS fecha_actual');
-    res.json({ ok: true, fecha: result.recordset[0].fecha_actual });
-  }catch (err) {
-  console.error('Error de conexión:', err); // MOSTRAR DETALLE EN CONSOLA
-  res.status(500).json({ error: err.message }); // MOSTRAR DETALLE EN RESPUESTA
-  }
-});
+const poolPromise = sql.connect(dbConfig)
+  .then(pool => {
+    console.log('Conectado a la base de datos MSSQL');
+    return pool;
+  })
+  .catch(err => {
+    console.error('Error conectando a la base de datos:', err);
+    throw err;
+  });
 
-// Iniciar servidor
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+module.exports = {
+  sql,         // para hacer consultas
+  poolPromise, // para usar el pool en tus queries
+};
+

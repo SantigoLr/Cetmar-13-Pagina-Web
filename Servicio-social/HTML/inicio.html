@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+</head>
+<body>
+  <h1 id="bienvenida">Cargando...</h1>
+
+  <script>
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (usuario) {
+      document.getElementById('bienvenida').textContent = `Bienvenido, ${usuario.nombre} (${usuario.rol})`;
+    } else {
+      window.location.href = '/HTML/Login.html'; // Evita entrar sin login
+    }
+  </script>
+</body>
+</html>
