@@ -189,6 +189,12 @@
     cursor: pointer;
     width: 450px;
     height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
 }
 
 .btn-pesca:hover{
@@ -197,12 +203,9 @@
 
 .btn-pesca i{
     font-size: 60px;
+    color: black;
 }
-.btn-pesca p{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px
-}
+
 
 .btn-mecanica {
     box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
@@ -216,6 +219,12 @@
     align-items: center;
     width: 450px;
     height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
 }
 
 .btn-mecanica:hover{
@@ -224,11 +233,6 @@
 
 .btn-mecanica i{
     font-size: 60px;
-}
-.btn-mecanica p{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:20px
 }
 
 .btn-refrigeracion{
@@ -244,6 +248,12 @@
     padding: 50px;
     width: 450px;
     height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
     
 }
 
@@ -254,11 +264,7 @@
 .btn-refrigeracion i{
     font-size: 60px;
 }
-.btn-refrigeracion p{
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
-}
+
 
 .btn-acuacultura{
     box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
@@ -270,9 +276,14 @@
     cursor: pointer;
     justify-content: center;
     align-items: center;
-
     width: 450px;
     height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
 }
 
 .btn-acuacultura:hover{
@@ -282,12 +293,7 @@
 .btn-acuacultura i{
     font-size: 60px;
 }
-.btn-acuacultura p{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px
 
-}
 
 .btn-alimentos{
     box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
@@ -302,7 +308,12 @@
     padding:50px;
     width: 450px;
     height: 200px;
-    margin-bottom: 15px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 30px;
 }
 
 .btn-alimentos:hover{
@@ -312,11 +323,6 @@
 .btn-alimentos i{
     font-size: 60px;
     margin-left:20px
-}
-.btn-alimentos p{
-    font-size: 30px;
-    font-weight: bold;
-
 }
 
 .btn-portuaria{
@@ -331,7 +337,12 @@
     align-items: center;
     width: 450px;
     height: 200px;
-    margin-bottom: 20px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
 }
 
 .btn-portuaria:hover{
@@ -341,11 +352,7 @@
 .btn-portuaria i{
     font-size: 60px;
 }
-.btn-portuaria p{
-    margin-left:15px;
-    font-size: 30px;
-    font-weight: bold;
-}
+
 
 
 /* =============== Parte Noticias =============== */

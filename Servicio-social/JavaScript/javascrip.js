@@ -29,12 +29,13 @@ function cerrarModal(carrera) {
     }
 }; */
 
-/* ---- boton ver mas ---- */
+/* ---- boton ver mas del apartado de NOSOTROS ---- */
 const botonExpandir = document.querySelector('.btn-expandir');
 const textoCompleto = document.querySelector('.texto-completo');
 const imagenNoticia = document.querySelector('.imagen-noticia');
 const textoMinimizado = document.querySelector('.texto-minimizado');
 const contenidoNoticia = document.querySelector('.contenido-noticia');
+
 
 botonExpandir.addEventListener('click', function () {
   const expandido = textoCompleto.style.maxHeight === 'none';
