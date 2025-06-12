@@ -24,19 +24,22 @@ router.post('/login', async (req, res) => {
 
     const usuario = result.recordset[0];
 
-    const coincide = contraseña === usuario.Contraseña;
+    const coincide = contraseña === usuario.Contraseña; // si luego activás bcrypt, aquí lo cambias
 
     if (!coincide) {
       return res.status(401).json({ ok: false, mensaje: 'Contraseña incorrecta' });
     }
 
+    // ✅ Guardar el usuario en sesión
+    req.session.usuario = {
+      id: usuario.Id,
+      nombre: usuario.Nombre,
+      rol: usuario.Rol
+    };
+
     res.json({
       ok: true,
-      usuario: {
-        id: usuario.Id,
-        nombre: usuario.Nombre,
-        rol: usuario.Rol
-      }
+      usuario: req.session.usuario
     });
 
   } catch (error) {

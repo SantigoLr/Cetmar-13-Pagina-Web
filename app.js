@@ -1,22 +1,30 @@
 const express = require('express');
 const path = require('path');
+const session = require('express-session');
+
 const authRoutes = require('./auth');
+const noticiasRoutes = require('./Noticias'); // Ajusta la ruta si Noticias.js está en otra carpeta
 
 const app = express();
 
-// Middleware para leer JSON (importante para login, etc)
-app.use(express.json());
+app.use(session({
+  secret: 'una_clave_segura',
+  resave: false,
+  saveUninitialized: false,
+  cookie: { httpOnly: true, maxAge: 60 * 60 * 1000 }
+}));
 
-// Servir todo lo estático dentro de Servicio-Social
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'Servicio-Social')));
 
-// Para que la raíz ("/") cargue Login.html (en Servicio-Social/HTML/)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'Servicio-Social', 'HTML', 'Login.html'));
 });
 
-// Rutas para autenticación (login, registro, etc)
+app.use(express.static(path.join(__dirname, 'Servicio-social')));
+
 app.use('/auth', authRoutes);
+app.use('/noticias', noticiasRoutes);  // <==== Aquí registrás el router de noticias
 
 const PORT = 3000;
 app.listen(PORT, () => {
