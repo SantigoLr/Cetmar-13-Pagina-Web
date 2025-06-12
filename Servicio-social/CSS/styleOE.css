@@ -5,6 +5,230 @@
     font-family: Tahoma
 }
 
+#img{
+    display: flex;
+    aspect-ratio: 8/2;
+    width: 100%;
+    height: auto;
+    flex: 1 0 100%;
+}
+
+
+/* =============== Parte Carreras =============== */
+.carreras{
+    margin-top:50px;
+    background-color: #1284bd;
+    height: 650px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.contenedor-carreras{
+    padding: 100px;
+    height: auto;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedor-subtitulo h3{
+    color: #000000;
+    font-size: 40px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.barra-blanca{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-blanca p{
+    background-color: #1284bd;
+    height: 5px;
+    width: 450px;
+}
+
+.btn-pesca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
+    background-color:#ffff;
+    border-radius: 15px;
+    border: none;
+    transition: transform 0.5s;
+    cursor: pointer;
+    width: 450px;
+    height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
+}
+
+.btn-pesca:hover{
+    transform: scale(1.1);
+}
+
+.btn-pesca i{
+    font-size: 60px;
+    color: black;
+}
+
+
+.btn-mecanica {
+    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
+    background-color:#ffff;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    transition: transform 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
+}
+
+.btn-mecanica:hover{
+    transform: scale(1.1);
+}
+
+.btn-mecanica i{
+    font-size: 60px;
+}
+
+.btn-refrigeracion{
+    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
+    background-color:#ffff;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    transition: transform 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 450px;
+    height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
+    
+}
+
+.btn-refrigeracion:hover{
+    transform: scale(1.1);
+}
+
+.btn-refrigeracion i{
+    font-size: 60px;
+}
+
+
+.btn-acuacultura{
+    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
+    background-color:#ffff;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    transition: transform 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
+}
+
+.btn-acuacultura:hover{
+    transform: scale(1.1);
+}
+
+.btn-acuacultura i{
+    font-size: 60px;
+}
+
+
+.btn-alimentos{
+    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
+    background-color:#ffff;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    transition: transform 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    width: 450px;
+    height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 30px;
+}
+
+.btn-alimentos:hover{
+    transform: scale(1.1);
+}
+
+.btn-alimentos i{
+    font-size: 60px;
+    margin-left:20px
+}
+
+.btn-portuaria{
+    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
+    background-color:#ffff;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    transition: transform 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 200px;
+    text-decoration: none;    
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:15px;
+    color: black;
+    gap: 10px;
+}
+
+.btn-portuaria:hover{
+    transform: scale(1.1);
+}
+
+.btn-portuaria i{
+    font-size: 60px;
+}
+
+
 img {
     height: 500px;
     width: auto;

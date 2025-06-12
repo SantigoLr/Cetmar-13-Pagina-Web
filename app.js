@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'Servicio-Social')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Servicio-Social', 'HTML', 'Login.html'));
+  res.sendFile(path.join(__dirname, 'Servicio-Social', 'HTML', 'index.html'));
 });
 
 app.use(express.static(path.join(__dirname, 'Servicio-social')));

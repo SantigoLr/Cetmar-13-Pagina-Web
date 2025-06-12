@@ -5,6 +5,8 @@
     font-family: Tahoma
 }
 
+
+
 /* =============== parte slider =============== */
 
 .container-slider{
@@ -17,6 +19,7 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+    
 }
 
 .slider{
@@ -26,6 +29,7 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 .25rem .5rem #21212126;
+    
 }
 
 .slider img{
@@ -140,337 +144,53 @@
     text-align: justify;
 }
 
-/* =============== Parte Carreras =============== */
-.carreras{
-    margin-top:200px;
-    background-color: #1284bd;
-    height: 850px;
-    width: 100%;
-}
+/* PARTE NOTICIAS */
 
-.contenedor-carreras{
-    padding: 100px;
-    height: auto;
-    gap: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+.contenedor-imagen{
+    margin-top: 200px;
+    background-color:   rgba(15, 120, 172, 0.761);
+    background-image: url(/Imagenes/cetmar-topolobampo.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    padding:100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-items: center;
-    align-items: center;
+    gap: 5px;
 }
 
-.contenedor-subtitulo h3{
-    color: #ffff;
+.contenedor-imagen h4{
     font-size: 40px;
-    padding-top: 50px;
-    text-align: center;
+    color: #fff;
 }
 
-.barra-blanca{
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.barra-blanca p{
-    background-color: #f3f3f3;
-    height: 5px;
-    width: 450px;
-}
-
-.btn-pesca {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
-    background-color:#ffff;
-    border-radius: 15px;
-    border: none;
-    transition: transform 0.5s;
-    cursor: pointer;
-    width: 450px;
-    height: 200px;
-    text-decoration: none;    
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px;
-    color: black;
-    gap: 10px;
-}
-
-.btn-pesca:hover{
-    transform: scale(1.1);
-}
-
-.btn-pesca i{
-    font-size: 60px;
-    color: black;
-}
-
-
-.btn-mecanica {
-    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
-    background-color:#ffff;
-    border-radius: 15px;
-    border: none;
-    display: flex;
-    transition: transform 0.5s;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 200px;
-    text-decoration: none;    
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px;
-    color: black;
-    gap: 10px;
-}
-
-.btn-mecanica:hover{
-    transform: scale(1.1);
-}
-
-.btn-mecanica i{
-    font-size: 60px;
-}
-
-.btn-refrigeracion{
-    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
-    background-color:#ffff;
-    border-radius: 15px;
-    border: none;
-    display: flex;
-    transition: transform 0.5s;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    width: 450px;
-    height: 200px;
-    text-decoration: none;    
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px;
-    color: black;
-    gap: 10px;
-    
-}
-
-.btn-refrigeracion:hover{
-    transform: scale(1.1);
-}
-
-.btn-refrigeracion i{
-    font-size: 60px;
-}
-
-
-.btn-acuacultura{
-    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
-    background-color:#ffff;
-    border-radius: 15px;
-    border: none;
-    display: flex;
-    transition: transform 0.5s;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 200px;
-    text-decoration: none;    
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px;
-    color: black;
-    gap: 10px;
-}
-
-.btn-acuacultura:hover{
-    transform: scale(1.1);
-}
-
-.btn-acuacultura i{
-    font-size: 60px;
-}
-
-
-.btn-alimentos{
-    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
-    background-color:#ffff;
-    border-radius: 15px;
-    border: none;
-    display: flex;
-    transition: transform 0.5s;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding:50px;
-    width: 450px;
-    height: 200px;
-    text-decoration: none;    
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px;
-    color: black;
-    gap: 30px;
-}
-
-.btn-alimentos:hover{
-    transform: scale(1.1);
-}
-
-.btn-alimentos i{
-    font-size: 60px;
-    margin-left:20px
-}
-
-.btn-portuaria{
-    box-shadow: 0px  5px 15px rgba(0, 0, 0, 0.25);
-    background-color:#ffff;
-    border-radius: 15px;
-    border: none;
-    display: flex;
-    transition: transform 0.5s;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 200px;
-    text-decoration: none;    
-    font-size: 30px;
-    font-weight: bold;
-    margin-left:15px;
-    color: black;
-    gap: 10px;
-}
-
-.btn-portuaria:hover{
-    transform: scale(1.1);
-}
-
-.btn-portuaria i{
-    font-size: 60px;
-}
-
-
-
-/* =============== Parte Noticias =============== */
-
-/* .contenedor-noticias{
-    background-color: #1284bd;
-    margin: 100px;
-    margin-left: 300px;
-    width: 70%;
-    height: 700px;
-    display: flex;
-    gap: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.noticia-uno{
-    background-color: rgb(237, 237, 237);
-}
-
-.noticia-uno img{
-    width: 100%;
-    height: 500px;
-}
-
-.noticia-uno h5{
+.contenedor-imagen p{
     font-size: 20px;
-    font-weight: bold;
+    color: #fff;
+    background-color: #0000003f;
+    padding: 2px;
 }
 
-.noticia-uno p{
-    
+.boton-noticias{
+    margin-top: 30px;
 }
 
-.noticia-dos{
-    background-color: red;
-
-}
-
-.noticia-tres{
-    background-color: red;
-} */
-
-
-/* =============== Parte modal =============== */
-
-.modal {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.modal-contenido {
-    background: white;
-    padding:   30px;
-    border-radius: 10px;
-    max-width: 1100px;
-    height: 61%;
-}
-
-.contenedor-grid{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 20px; 
-    align-items: center; 
-}
-
-
-.modal-imagen img{
-    width:100%;
-    object-fit: cover;
-    border-radius:8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.modal-texto h4{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom:20px ;
-}
-
-.modal-texto p{
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.cerrar {
-    position: relative;
-    top: 0px;
-    left: 99%;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.btn-ver-mas {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 16px;
-    width: 40%;
-    background: #2c7be5;
-    color: white;
+.boton-noticias a{
+    color: #ebebeb;
     text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 32%;
+    background-color: #1284bd;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.2s;
 }
 
-.btn-ver-mas:hover {
-    background: #1a68d1;
-}
+.boton-noticias  :hover{
+    background-color:rgb(10, 103, 150);
+} 
+
+
+
+

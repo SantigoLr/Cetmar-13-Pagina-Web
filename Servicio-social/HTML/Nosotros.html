@@ -42,43 +42,34 @@
                 <ul><a href="/HTML/Nosotros.html">Nosotros</a></ul>
             </nav>
         </div>
-<!-- Seccion Nosotros INICIO-->
+    <!-- Seccion Nosotros INICIO-->
+    <div class="contenedor-nosotros">
+
         <div class="contenedor-subtitulo"> 
             <h3>Nosotros</h3>
-            <div class="barra-azul"><p></p></div>
+            <div class="barra-blanca"><p></p></div>
         </div>
 
-        <section class="NOSOTROS">
-            <div class="textos">
-                <div class="lineadeco"><div class="lineadeco2">
-                <p class="texto-principal">El Centro de Estudios Tecnológicos del Mar No. 13 (CETMAR 13) de Topolobampo es una institución educativa de nivel medio superior con más de 40 años de trayectoria, dedicada a la formación de técnicos profesionales en áreas vinculadas al sector marítimo, pesquero y portuario. Ubicado en el puerto de Topolobampo, Sinaloa, el CETMAR 13 ha egresado a más de 4,000 estudiantes que hoy contribuyen activamente al desarrollo de la región y del país.<br />
-                    Nuestros programas están diseñados para brindar a los estudiantes una formación integral, combinando conocimientos teóricos con prácticas reales, y fomentando valores como la responsabilidad ambiental y el compromiso social.<br />
-                    Con una infraestructura adecuada y un equipo docente comprometido, en CETMAR 13 seguimos formando líderes técnicos capaces de enfrentar los desafíos del mundo marino y contribuir al desarrollo sostenible de nuestras comunidades.
-                </p>
-                </div></div>
+        <div class="contenedor-dentro">
+            <div class="mision-vison">
+                <h2>Misión</h2>
+                    <p>Formar profesionistas de alto nivel con dominio de las nuevas tecnologías, que sean innovadores, competitivos y críticos con una clara realidad de su medio ambiente laboral y social, lo cual será promovido a través de profesores comprometidos con el sector educativo, social, acuícola y marítimo-pesquero mediante una infraestructura educativa consolidada en los nuevos avances científicos, tecnológicos y en los procesos de aprendizaje. </p>
+                <h2>Visión</h2>
+                    <p>Ser la mejor institución educativa en la formación integral de hombres y mujeres que cuenten con principios científicos, tecnológicos, ecológicos, éticos y humanísticos dentro de una cultura de mejora continua que les permita ser los actores principales en el desarrollo y aprovechamiento racional de los recursos del sector acuícola y marítimo-pesquero del país.</p>
             </div>
-        </section>
-        
-        <div class="contenedor-subtitulo-direccion">
-            <h3>Dirección</h3>
+            <div class="mapa">
+                <h3>CETMAR No. 13</h3>
+                <div id="map" style="height: 400px;"></div>
+                <p>Km 23 Autopista Los Mochis Topolobampo 81370 Topolobampo</p>
+            </div>
         </div>
-        <div class="texto-mapa">
+    </div>
+        <!-- <div class="texto-mapa">
             <div class="direccion">Km 23 Autopista Los Mochis Topolobampo 81370 Topolobampo</div>
             <div class="mapa">
                 <div id="map" style="height: 400px;"></div>
-                <script>
-                    var map = L.map('map').setView([25.604592647991403, -109.06150591346855], 16); // Topolobampo
-
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '© OpenStreetMap contributors'
-                    }).addTo(map);
-
-                    L.marker([25.604592647991403, -109.06150591346855]).addTo(map)
-                    .bindPopup('CETMAR 13')
-                    .openPopup();
-                </script>
             </div>
-        </div>
+        </div> -->
 <!-- Seccion Nosotros FIN -->
         
         <div class="abajo">
@@ -97,6 +88,6 @@
         </div>
         <div Class="abajo-azul"></div>
     
-        <script src="/JavaScript/javascrip.js"></script>
+        <script src="/JavaScript/Nosotros.js"></script>
 </body>
 </html>

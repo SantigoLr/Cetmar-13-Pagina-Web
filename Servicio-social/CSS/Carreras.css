@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    
+}
+
+.contenedor-imagen{
+    background-color:   rgba(15, 120, 172, 0.761);
+    background-image: url(/Imagenes/pexels-izafi-32460410\ \(2\).jpg);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:200px 0px;
+}
+
+.contenedor-imagen h2{
+    padding: 10px;
+    border-radius:10px ;
+    color: #fff;
+    background-color: #2284a8f3;
+    font-size: 50px;
+    font-weight:bold;
+}
+
+        /* INFORMACION */
+
+.contenedor-info{
+    padding: 100px 120px;
+
+}
+
+.titulos{
+    padding-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: auto;
+}
+
+.parrafos{
+    padding-left: 150px;
+    margin-top: 30px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedor-info h3{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.contenedor-info ul{
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+
+/* PARTE PLAN DE ESTUDIOS */
+.contenedor-subtitulo{
+    margin-bottom: 30px;
+}
+
+.contenedor-subtitulo h3{
+    color: #000000;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.barra-blanca{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-blanca p{
+    background-color: #1284bd;
+    height: 5px;
+    width: 450px;
+}
+
+/* PARTE ACORDON SEMESTRES */
+
+.acordeon {
+    max-width: 700px;
+    margin: auto;
+
+}
+
+.acordeon input[type="checkbox"] {
+    display: none;
+}
+
+.acordeon label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1284bd; 
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.acordeon label:hover {
+    background-color: rgb(10, 103, 150);
+    color: #dfca12;
+}
+
+    .icono::before {
+    content: "+";
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    
+}
+
+.acordeon ul {
+    list-style: disc;
+    margin: 0;
+    height: 0;
+    transition: height 0.4s ease;
+    interpolate-size: allow-keywords;
+    background-color: #f0f0f0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+
+}
+
+.acordeon ul li{
+    margin-left: 20px;
+}
+
+input:checked + label + ul {
+    height: auto;
+}
+
+input:checked + label .icono::before {
+    content: "-";
+}
+
+/* ABAJO */
+.abajo{
+    margin-top: 50px;
+}

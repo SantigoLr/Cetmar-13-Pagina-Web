@@ -37,6 +37,7 @@
     align-items: flex-start;
     flex-direction: row;
     gap: 20px;
+    margin-bottom: 315px; /* HAY QUE CAMBIAR ESTO */
 }
 
 .noticias{
