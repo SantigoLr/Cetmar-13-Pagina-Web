@@ -77,7 +77,7 @@
 
 
 .barra-azul{
-    padding-top: 10px;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
 }
@@ -85,7 +85,7 @@
 .barra-azul p{
     background-color: #1284bd;
     height: 5px;
-    width: 300px;
+    width: 750px;   
 }
 
 /* =============== Pequeña introduccion =============== */

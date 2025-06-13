@@ -54,45 +54,11 @@
                 <button class="btn-expandir">v Ver más</button>
             </div>
         </section>  -->
- <h1>Noticias Publicadas</h1>
-  <div id="contenedorNoticias"></div>
 
-  <script>
-    fetch('/noticias/listar')
-      .then(res => res.json())
-      .then(noticias => {
-        const contenedor = document.getElementById('contenedorNoticias');
-
-        noticias.forEach(noticia => {
-          const div = document.createElement('div');
-          div.className = 'noticia';
-
-          div.innerHTML = `
-            <h2>${noticia.Titulo}</h2>
-            <p><strong>Autor:</strong> ${noticia.Nombre} ${noticia.Apellidos}</p>
-            <p><strong>Fecha:</strong> ${new Date(noticia.FechaPublicacion).toLocaleString()}</p>
-            <p>${noticia.Texto}</p>
-          `;
-
-          if (noticia.imagenes.length > 0) {
-            const contImg = document.createElement('div');
-            contImg.className = 'imagenes';
-
-            noticia.imagenes.forEach(img => {
-              const tagImg = document.createElement('img');
-              tagImg.src = img.UrlImagen;
-              contImg.appendChild(tagImg);
-            });
-            div.appendChild(contImg);
-          }
-          contenedor.appendChild(div);
-        });
-      })
-      .catch(err => {
-        console.error('Error al cargar noticias:', err);
-        alert('No se pudieron cargar las noticias.');
-      });
-  </script>
+        <div class="contenedor-subtitulo"> 
+            <h3>Noticias</h3>
+        </div>
+        <div id="contenedorNoticias"></div>
 
 
 <!-- Seccion Noticias FIN -->
@@ -112,6 +78,8 @@
             </div>
         </div>
         <div Class="abajo-azul"></div>
-        <script src="/JavaScript/javascrip.js"></script>
+
+    <script src="/JavaScript/VerNoticias.js"></script>
+    <script src="/JavaScript/javascrip.js"></script>
 </body>
 </html>

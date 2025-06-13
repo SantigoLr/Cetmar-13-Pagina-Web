@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma
+}
+
+/* --- */
+.contenedor-subtitulo h3{
+    color: #1284bd;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+.texto{
+    padding: 15px;
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content:center;
+}
+.barra-azul{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.barra-azul p{
+    background-color: #1284bd;
+    height: 5px;
+    width: 1200px;
+}
+/* --- */
+.Noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Titulo{
+    margin-top: 15px;
+    width: 1200px;
+    height: 50px;
+    border: 2px solid #1284bd;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 0 20px;
+    color: #183B5D;
+    text-align: left;
+}
+#TextoNoticia{
+    resize: none;
+    margin-top: 15px;
+    width: 1200px;
+    height: 250px;
+    border: 2px solid #1284bd;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 0 20px;
+    color: #183B5D;
+    text-align: left;
+}
+#UrlImagenes{
+    margin-top: 15px;
+    width: 1200px;
+    height: 50px;
+    border: 2px solid #1284bd;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 0 20px;
+    color: #183B5D;
+    text-align: left;
+}
+#Boton{
+    margin-top: 15px;
+    width: 40%;
+    height: 45px;
+    border-radius: 45px;
+    background: #15A6CA;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1B4168;
+    font-weight: 600;
+}
+
+#Boton button:hover{
+    background: white;
+    color: #1B4168;
+}

@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/SubirNoticias.css">
+    <link rel="stylesheet" href="/CSS/Menu.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CETMAR-13 (Subir Noticias)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <h1 id="bienvenida">Cargando...</h1>
-  <script>
-    const usuario = JSON.parse(localStorage.getItem('usuario'));
-    if (usuario) {
-      document.getElementById('bienvenida').textContent = `Bienvenido, ${usuario.nombre} (${usuario.rol})`;
-    } else {
-      window.location.href = '/HTML/Login.html'; // Evita entrar sin login
-    }
-  </script>
+  <header>
+    <div class="superior">
+      <nav class="redes">
+        <a href="https://www.instagram.com/cetmar13topolobampo/"><i class="fab fa-instagram icono-redes"></i></a>
+        <a href="https://www.facebook.com/cetmar13"><i class="fab fa-facebook icono-redes"></i></a>
+      </nav>
+      <a href=""><img src="/Imagenes/icono.jpg"></a>
+      <nav class="Inicio-Sesion">
+        <a href="/HTML/Login.html" class="icono-sesion"><i class="fas fa-user icono-sesion" title="Inicia sesion" ></i> </a>      
+      </nav>
+    </div>
+  </header>
+        <div class="inferior">
+            <nav class="botones">
+                <ul><a href="/HTML/index.html">Inicio</a></ul>
+                <ul><a href="/HTML/OfertaEducativa.html">Oferta Educativa</a></ul>
+                <ul><a href="/HTML/Noticias.html">Noticias</a></ul>
+                <ul><a href="/HTML/Nosotros.html">Nosotros</a></ul>
+            </nav>
+        </div>
 
-  <form id="form-subir-noticia">
-    <input type="text" name="titulo" placeholder="Título" required>
-    <textarea name="contenido" placeholder="Contenido" required></textarea>
-    <input type="text" name="imagen_url" placeholder="URL de imagen">
-    <button type="submit">Subir Noticia</button>
-  </form>
-
-
-<script>
-  document.getElementById('form-subir-noticia').addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const noticia = {
-      titulo: e.target.titulo.value,
-      texto: e.target.contenido.value,    // cambiar contenido a texto
-      imagen_url: e.target.imagen_url.value
-    };
-
-    const res = await fetch('/noticias/subir', { // URL relativa, mismo servidor y puerto
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credentials: 'include',
-      body: JSON.stringify(noticia)
-    });
-
-    const data = await res.json();
-    alert(data.mensaje);
-  });
-</script>
+  <div class="contenedor-subtitulo"> 
+    <h3>Noticias</h3>
+    <div class="barra-azul"><p></p></div>
+  </div>
+  
+      <form id="form-subir-noticia">
+        <div class="Noticias">
+          <input id="Titulo" type="text" name="titulo" placeholder="Título" required />
+          <textarea id="TextoNoticia" name="contenido" placeholder="Contenido" required></textarea>
+          <input id="UrlImagenes" type="text" name="imagen_url" placeholder="URL de imagen" />
+          <button id="Boton" type="submit">Subir Noticia</button>
+        </div>
+      </form>
+  
+  <script src="../JavaScript/SubirNoticias.js"></script>
 
 </body>
 </html>
