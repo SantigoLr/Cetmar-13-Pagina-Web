@@ -1,14 +1,14 @@
 const sql = require('mssql');
 
 const dbConfig = {
-  user: 'admin_user',
-  password: 'admin123',
-  server: 'R5-34G\\SQLEXPRESS01',
-  database: 'CETMAR-13',
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  server: process.env.DB_SERVER, // por ejemplo: cetmar13.database.windows.net
+  database: process.env.DB_NAME,
   options: {
-    trustServerCertificate: true,
-    encrypt: false,
-  },
+    encrypt: true,
+    trustServerCertificate: false
+  }
 };
 
 const poolPromise = sql.connect(dbConfig)
@@ -22,7 +22,8 @@ const poolPromise = sql.connect(dbConfig)
   });
 
 module.exports = {
-  sql,         // para hacer consultas
-  poolPromise, // para usar el pool en tus queries
+  sql,
+  poolPromise,
 };
+
 
