@@ -1,12 +1,11 @@
-/* =============== parte slider =============== */
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slider img');
+let index = 0;
 
-document.querySelectorAll('.slider-nav a').forEach((dot, index) => {
-    dot.addEventListener('click', (e) => {
-        e.preventDefault(); // Evita el comportamiento predeterminado
-        const slider = document.querySelector('.slider');
-        slider.scrollTo({
-            left: slider.offsetWidth * index, // Desplaza al slide correspondiente
-            behavior: 'smooth' // Desplazamiento suave
-        });
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    slider.scrollTo({
+    left: slider.clientWidth * index,
+        behavior: 'smooth'
     });
-});
+}, 6000);
