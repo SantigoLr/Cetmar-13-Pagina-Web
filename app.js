@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'Servicio-social')));
 app.use('/auth', authRoutes);
 app.use('/noticias', noticiasRoutes);  // <==== Aquí registrás el router de noticias
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor corriendo en http://localhost:${port}`);
 });
